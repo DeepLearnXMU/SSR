@@ -1,0 +1,901 @@
+{
+  "alpaca_en": {
+    "file_name": "alpaca_data_en_52k.json",
+    "file_sha1": "607f94a7f581341e59685aef32f531095232cf23"
+  },
+  "alpaca_en_smp10": {
+    "file_name": "alpaca_data_en_52k_smp10.json"
+  },
+  "alpaca_en_smp01": {
+    "file_name": "alpaca_data_en_52k_smp01.json"
+  },
+  "alpaca_en_smp001": {
+    "file_name": "alpaca_data_en_52k_smp001.json"
+  },
+  "alpaca_en_smp50_km520": {
+    "file_name": "alpaca/genearated-icl-naive-kmeans520-self/alpaca-7b/ori/alpaca_data_en_52k_smp50.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "definition",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "alpaca_en_smp50_llama_km520_alpaca_icl_lb_dosmp": {
+    "file_name": "alpaca/genearated-icl-naive-kmeans520-self/llama-7b/ori-labeled/alpaca_data_en_52k_smp50.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "alpaca_zh": {
+    "file_name": "alpaca_data_zh_51k.json",
+    "file_sha1": "e655af3db557a4197f7b0cf92e1986b08fae6311"
+  },
+  "self_cognition": {
+    "file_name": "self_cognition.json",
+    "file_sha1": "6287a730ada924fc5d9eadc6d8f865e01b7a6f67"
+  },
+  "lima": {
+    "file_name": "lima.json",
+    "file_sha1": "9db59f6b7007dc4b17529fc63379b9cd61640f37",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "history": "history"
+    }
+  },
+  "lima_demo": {
+    "file_name": "lima_demo.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "history": "history"
+    }
+  },
+  "example": {
+    "script_url": "example_dataset",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "history": "history"
+    }
+  },
+  "guanaco": {
+    "hf_hub_url": "JosephusCheung/GuanacoDataset"
+  },
+  "firefly": {
+    "hf_hub_url": "YeungNLP/firefly-train-1.1M",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "target",
+      "history": ""
+    }
+  },
+  "codealpaca": {
+    "hf_hub_url": "sahil2801/CodeAlpaca-20k"
+  },
+  "alpaca_cot": {
+    "hf_hub_url": "QingyiSi/Alpaca-CoT"
+  },
+  "webqa": {
+    "hf_hub_url": "suolyer/webqa",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ultra_chat": {
+    "script_url": "ultra_chat",
+    "columns": {
+      "prompt": "instruction",
+      "query": "",
+      "response": "output",
+      "history": "history"
+    }
+  },
+  "novel_tokens512_50k": {
+    "hf_hub_url": "zxbsmk/webnovel_cn"
+  },
+  "adgen": {
+    "hf_hub_url": "HasturOfficial/adgen",
+    "columns": {
+      "prompt": "content",
+      "query": "",
+      "response": "summary",
+      "history": ""
+    }
+  },
+  "hh_rlhf_en": {
+    "script_url": "hh_rlhf_en",
+    "columns": {
+      "prompt": "instruction",
+      "query": "",
+      "response": "output",
+      "history": "history"
+    },
+    "ranking": true
+  },
+  "wiki_demo": {
+    "file_name": "wiki_demo.txt",
+    "file_sha1": "b2288edb05b233e5b35250fd4b308a5fa21fa66d",
+    "columns": {
+      "prompt": "text",
+      "query": "",
+      "response": "",
+      "history": ""
+    }
+  },
+  "refinedweb": {
+    "hf_hub_url": "tiiuae/falcon-refinedweb",
+    "columns": {
+      "prompt": "content",
+      "query": "",
+      "response": "",
+      "history": ""
+    }
+  },
+  "wikipedia_en": {
+    "hf_hub_url": "olm/olm-wikipedia-20221220",
+    "columns": {
+      "prompt": "text",
+      "query": "",
+      "response": "",
+      "history": ""
+    }
+  },
+  "wikipedia_zh": {
+    "hf_hub_url": "pleisto/wikipedia-cn-20230720-filtered",
+    "columns": {
+      "prompt": "completion",
+      "query": "",
+      "response": "",
+      "history": ""
+    }
+  },
+  "the_stack": {
+    "hf_hub_url": "bigcode/the-stack",
+    "columns": {
+      "prompt": "content",
+      "query": "",
+      "response": "",
+      "history": ""
+    }
+  },
+  "starcoder": {
+    "hf_hub_url": "bigcode/starcoderdata",
+    "columns": {
+      "prompt": "content",
+      "query": "",
+      "response": "",
+      "history": ""
+    }
+  },
+  "ni_c012_qa_train": {
+    "file_name": "ni-cus0.12/split/qa.train.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_qg_train": {
+    "file_name": "ni-cus0.12/split/qg.train.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_sa_train": {
+    "file_name": "ni-cus0.12/split/sa.train.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_sum_train": {
+    "file_name": "ni-cus0.12/split/sum.train.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_trans_train": {
+    "file_name": "ni-cus0.12/split/trans.train.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_dsg_train": {
+    "file_name": "ni-cus0.12/split/dsg.train.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_expl_train": {
+    "file_name": "ni-cus0.12/split/expl.train.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_para_train": {
+    "file_name": "ni-cus0.12/split/para.train.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_pe_train": {
+    "file_name": "ni-cus0.12/split/pe.train.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_pos_train": {
+    "file_name": "ni-cus0.12/split/pos.train.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_qa_eval": {
+    "file_name": "ni-cus0.12/split/qa.eval.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_qg_eval": {
+    "file_name": "ni-cus0.12/split/qg.eval.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_sa_eval": {
+    "file_name": "ni-cus0.12/split/sa.eval.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_sum_eval": {
+    "file_name": "ni-cus0.12/split/sum.eval.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_trans_eval": {
+    "file_name": "ni-cus0.12/split/trans.eval.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_dsg_eval": {
+    "file_name": "ni-cus0.12/split/dsg.eval.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_expl_eval": {
+    "file_name": "ni-cus0.12/split/expl.eval.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_para_eval": {
+    "file_name": "ni-cus0.12/split/para.eval.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_pe_eval": {
+    "file_name": "ni-cus0.12/split/pe.eval.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_pos_eval": {
+    "file_name": "ni-cus0.12/split/pos.eval.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_qa_train_smp01": {
+    "file_name": "ni-cus0.12/split/qa.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_qg_train_smp01": {
+    "file_name": "ni-cus0.12/split/qg.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_sa_train_smp01": {
+    "file_name": "ni-cus0.12/split/sa.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_sum_train_smp01": {
+    "file_name": "ni-cus0.12/split/sum.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_trans_train_smp01": {
+    "file_name": "ni-cus0.12/split/trans.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_dsg_train_smp01": {
+    "file_name": "ni-cus0.12/split/dsg.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_expl_train_smp01": {
+    "file_name": "ni-cus0.12/split/expl.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_para_train_smp01": {
+    "file_name": "ni-cus0.12/split/para.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_pe_train_smp01": {
+    "file_name": "ni-cus0.12/split/pe.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_pos_train_smp01": {
+    "file_name": "ni-cus0.12/split/pos.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  }  ,
+  "ni_c012_qa_train_km20_smp01": {
+    "file_name": "ni-cus0.12/split-kmeans20/qa.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_qg_train_km20_smp01": {
+    "file_name": "ni-cus0.12/split-kmeans20/qg.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_sa_train_km20_smp01": {
+    "file_name": "ni-cus0.12/split-kmeans20/sa.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_sum_train_km20_smp01": {
+    "file_name": "ni-cus0.12/split-kmeans20/sum.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_trans_train_km20_smp01": {
+    "file_name": "ni-cus0.12/split-kmeans20/trans.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_dsg_train_km20_smp01": {
+    "file_name": "ni-cus0.12/split-kmeans20/dsg.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_expl_train_km20_smp01": {
+    "file_name": "ni-cus0.12/split-kmeans20/expl.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_para_train_km20_smp01": {
+    "file_name": "ni-cus0.12/split-kmeans20/para.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_pe_train_km20_smp01": {
+    "file_name": "ni-cus0.12/split-kmeans20/pe.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_pos_train_km20_smp01": {
+    "file_name": "ni-cus0.12/split-kmeans20/pos.train.smp01.json",
+    "columns": {
+      "prompt": "full_prompt",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_qa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue/qa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_qg": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue/qg.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_sa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue/sa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_sum": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue/sum.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_trans": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue/trans.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue2_qa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue2/qa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue2_qg": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue2/qg.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue2_sa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue2/sa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue2_sum": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue2/sum.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue2_trans": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue2/trans.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue3_qa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue3/qa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue3_qg": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue3/qg.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue3_sa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue3/sa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue3_sum": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue3/sum.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue3_trans": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b/cl_queue3/trans.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_llama2_7b_chat_qa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b-chat/cl_queue/qa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_llama2_7b_chat_qg": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b-chat/cl_queue/qg.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_llama2_7b_chat_sa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b-chat/cl_queue/sa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_llama2_7b_chat_sum": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b-chat/cl_queue/sum.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_llama2_7b_chat_trans": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/llama2-7b-chat/cl_queue/trans.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_alpaca_7b_qa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue/qa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_alpaca_7b_qg": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue/qg.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_alpaca_7b_sa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue/sa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_alpaca_7b_sum": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue/sum.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue_alpaca_7b_trans": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue/trans.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_alpacakm520_icl_gen_km20_self_cl_queue_alpaca_7b_qa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue_alpacakm520/qa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_alpacakm520_icl_gen_km20_self_cl_queue_alpaca_7b_qg": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue_alpacakm520/qg.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_alpacakm520_icl_gen_km20_self_cl_queue_alpaca_7b_sa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue_alpacakm520/sa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_alpacakm520_icl_gen_km20_self_cl_queue_alpaca_7b_sum": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue_alpacakm520/sum.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_alpacakm520_icl_gen_km20_self_cl_queue_alpaca_7b_trans": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue_alpacakm520/trans.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_alpacakm520_lb_icl_gen_km20_self_cl_queue_alpaca_7b_qa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue_alpacakm520_lb/qa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_alpacakm520_lb_icl_gen_km20_self_cl_queue_alpaca_7b_qg": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue_alpacakm520_lb/qg.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_alpacakm520_lb_icl_gen_km20_self_cl_queue_alpaca_7b_sa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue_alpacakm520_lb/sa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_alpacakm520_lb_icl_gen_km20_self_cl_queue_alpaca_7b_sum": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue_alpacakm520_lb/sum.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_alpacakm520_lb_icl_gen_km20_self_cl_queue_alpaca_7b_trans": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue_alpacakm520_lb/trans.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue2_alpaca_7b_qa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue2/qa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue2_alpaca_7b_qg": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue2/qg.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue2_alpaca_7b_sa": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue2/sa.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue2_alpaca_7b_sum": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue2/sum.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  },
+  "ni_c012_icl_gen_km20_self_cl_queue2_alpaca_7b_trans": {
+    "file_name": "ni-cus0.12/genearated-icl-naive-kmeans20-self/alpaca-7b/cl_queue2/trans.train.smp001.2shot.smp3.rp1.2.json",
+    "columns": {
+      "prompt": "inputs",
+      "query": "",
+      "response": "targets",
+      "history": ""
+    }
+  }
+}
