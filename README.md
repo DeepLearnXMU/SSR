@@ -4,7 +4,7 @@
 
 ![](./framework.png)
 
-## Codebase Structure
+## 🧱 Codebase Structure
 
 This codebase is built on top of [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) framework.
 
@@ -23,13 +23,13 @@ To get started with SSR, please refer to the following directory tree structure 
     └── scripts-ni-c012             # Examples of run scripts
 ```
 
-## Installation
+## 📲 Installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Pipeline
+## 🛢 Pipeline
 
 ### Step 1: In-Context Learning Based Instance Synthesis
 
@@ -53,7 +53,7 @@ pip install -r requirements.txt
 
 **Note**: You should train the first task of contiunal learning using the `single task` script before executing `SSR`/`RandSel`/`KMeansSel`/`Non-rehearsal` scripts.
 
-## Citation
+## 📝 Citation
 
 If you find this useful in your research, please consider citing:
 
