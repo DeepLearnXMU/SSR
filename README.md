@@ -40,20 +40,47 @@ pip install -r requirements.txt
 
 ### Step 2: Synthetic Output Refinement
 
-1. use `custom/icl_gen/label_param.py`
+1. use `custom/icl_gen/label_param.py` (integrated in the following scripts)
 
 ### Step 3: Rehearsal with Selected Synthetic Instances
 
-- multi-task learning (MTL): `src/scripts-ni-c012/lora/all/[model_name]/[model_name].lora.[all|all_5].3ep.bs32x1x1.bf16.sh`
-- single task (& Stage 1 in continual learing): `src/scripts-ni-c012/lora/sing/[model_name]/[model_name].lora.single.3ep.bs32x1x1.bf16.sh`
-- Non-rehearsal: `src/scripts-ni-c012/lora/[cl|cl2|cl3]/[model_name]/[model_name].lora.[cl_queue|cl_queue2|cl_queue3].3ep.bs32x1x1.lr2e-04.bf16.sh`
-- RandSel: `src/scripts-ni-c012/lora/[cl|cl2|cl3]/[model_name]/[model_name].lora.[cl_queue|cl_queue2|cl_queue3]_rp.3ep.bs32x1x1.lr2e-04.bf16.sh`
-- KMeansSel: `src/scripts-ni-c012/lora/[cl|cl2|cl3]/[model_name]/[model_name].lora.[cl_queue|cl_queue2|cl_queue3]_km20_rp.3ep.bs32x1x1.lr2e-04.bf16.sh`
-- SSR: `src/scripts-ni-c012/lora/[cl|cl2|cl3]/[model_name]/[model_name].lora.[cl_queue|cl_queue2|cl_queue3]_iclgen_self.3ep.bs32x1x1.lr2e-04.bf16.sh`
+- **multi-task learning (MTL)**: `src/scripts-ni-c012/lora/all/[model_name]/[model_name].lora.[all|all_5].3ep.bs32x1x1.bf16.sh`
+- **single task (& Stage 1 in continual learing)**: `src/scripts-ni-c012/lora/sing/[model_name]/[model_name].lora.single.3ep.bs32x1x1.bf16.sh`
+- **Non-rehearsal**: `src/scripts-ni-c012/lora/[cl|cl2|cl3]/[model_name]/[model_name].lora.[cl_queue|cl_queue2|cl_queue3].3ep.bs32x1x1.lr2e-04.bf16.sh`
+- **RandSel**: `src/scripts-ni-c012/lora/[cl|cl2|cl3]/[model_name]/[model_name].lora.[cl_queue|cl_queue2|cl_queue3]_rp.3ep.bs32x1x1.lr2e-04.bf16.sh`
+- **KMeansSel**: `src/scripts-ni-c012/lora/[cl|cl2|cl3]/[model_name]/[model_name].lora.[cl_queue|cl_queue2|cl_queue3]_km20_rp.3ep.bs32x1x1.lr2e-04.bf16.sh`
+- **SSR**: `src/scripts-ni-c012/lora/[cl|cl2|cl3]/[model_name]/[model_name].lora.[cl_queue|cl_queue2|cl_queue3]_iclgen_self.3ep.bs32x1x1.lr2e-04.bf16.sh`
+
+**Note**: You should train the first task of contiunal learning using the `single task` script before executing `SSR`/`RandSel`/`KMeansSel`/`Non-rehearsal` scripts.
 
 ## Citation
 
 If you find this useful in your research, please consider citing:
+
+    @inproceedings{huang-etal-2024-mitigating,
+        title = "Mitigating Catastrophic Forgetting in Large Language Models with Self-Synthesized Rehearsal",
+        author = "Huang, Jianheng  and
+          Cui, Leyang  and
+          Wang, Ante  and
+          Yang, Chengyi  and
+          Liao, Xinting  and
+          Song, Linfeng  and
+          Yao, Junfeng  and
+          Su, Jinsong",
+        editor = "Ku, Lun-Wei  and
+          Martins, Andre  and
+          Srikumar, Vivek",
+        booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        month = aug,
+        year = "2024",
+        address = "Bangkok, Thailand",
+        publisher = "Association for Computational Linguistics",
+        url = "https://aclanthology.org/2024.acl-long.77",
+        pages = "1416--1428",
+        abstract = "Large language models (LLMs) suffer from catastrophic forgetting during continual learning. Conventional rehearsal-based methods rely on previous training data to retain the model{'}s ability, which may not be feasible in real-world applications. When conducting continual learning based on a publicly-released LLM checkpoint, the availability of the original training data may be non-existent. To address this challenge, we propose a framework called Self-Synthesized Rehearsal (SSR) that uses the LLM to generate synthetic instances for rehearsal. Concretely, we first employ the base LLM for in-context learning to generate synthetic instances. Subsequently, we utilize the latest LLM to refine the instance outputs based on the synthetic inputs, preserving its acquired ability. Finally, we select diverse high-quality synthetic instances for rehearsal in future stages. Experimental results demonstrate that SSR achieves superior or comparable performance compared to conventional rehearsal-based approaches while being more data-efficient. Besides, SSR effectively preserves the generalization capabilities of LLMs in general domains.",
+    }
+
+or
 
     @misc{huang2024mitigating,
         title={Mitigating Catastrophic Forgetting in Large Language Models with Self-Synthesized Rehearsal}, 
